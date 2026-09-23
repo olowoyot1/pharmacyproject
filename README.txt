@@ -11,3 +11,6 @@ Before production:
 2. Replace any illustrative dashboard figures with live/approved figures.
 3. Confirm final Zoho pricing before publishing.
 4. Add the official OAATZ logo asset if desired.
+
+
+Branding: Updated with the supplied OAATZ Cosult Ltd logo. The logo is embedded in index.html and also included as oaatz-logo.jpg.
