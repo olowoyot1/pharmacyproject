@@ -14,3 +14,6 @@ Before production:
 
 
 Branding: Updated with the supplied OAATZ Cosult Ltd logo. The logo is embedded in index.html and also included as oaatz-logo.jpg.
+
+
+WhatsApp Demo Booking: All Book a Demo submissions open WhatsApp at +234 816 370 8556 with the entered demo details pre-filled.

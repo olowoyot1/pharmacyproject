@@ -389,9 +389,16 @@ function toggleNav(){
 }
 function submitDemo(e){
   e.preventDefault();
-  const f=e.target, name=f.name.value;
-  alert('Thank you, '+name+'. Your demo request has been captured for this preview. Connect this form to your CRM/email endpoint before production.');
-  f.reset(); closeModal();
+  const f=e.target;
+  const name=f.name.value.trim();
+  const company=f.company.value.trim();
+  const email=f.email.value.trim();
+  const message=f.message.value.trim();
+  const text = `Hello OAATZ Cosult Ltd, I would like to book a system demonstration.\n\nName: ${name}\nBusiness / Company: ${company}\nEmail: ${email}\nMessage: ${message || 'I would like to see the POS → Inventory → Zoho Books workflow.'}`;
+  const whatsappUrl = 'https://wa.me/2348163708556?text=' + encodeURIComponent(text);
+  window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  f.reset();
+  closeModal();
 }
 document.getElementById('modal').addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
 </script>
